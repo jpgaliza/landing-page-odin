@@ -2,13 +2,23 @@
 
 * {
     font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    line-height: 1.6;
+}
+
+/* Header */
 header {
     background-color: #1f2937;
+    color: white;
+    padding: 20px 200px;
     display: flex;
-    justify-content: center;
-    gap: 800px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header figure img {
@@ -17,17 +27,177 @@ header figure img {
 }
 
 header ul {
+    list-style: none;
     display: flex;
-    align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 header ul li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
+    font-weight: 500;
 }
 
-#section1 {
+/* First Section (Hero) */
+.first-section {
     background-color: #1f2937;
-    color: #fff;
+    color: white;
+    padding: 100px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-information {
+    max-width: 50%;
+}
+
+.main-information h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: #f9faf8;
+}
+
+.main-information h2 {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-bottom: 20px;
+}
+
+.main-information button {
+    padding: 10px 20px;
+    background-color: #3882f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.first-section figure img {
+    width: 400px;
+    height: auto;
+}
+
+/* Second Section (Abilities) */
+.second-section {
+    padding: 100px 200px;
+    text-align: center;
+    background-color: white;
+}
+
+.second-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.abilities {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.abilities figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.abilities img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.abilities h4 {
+    margin-top: 10px;
+}
+
+/* Third Section (Quote) */
+.third-section {
+    background-color: #e5e7eb;
+    padding: 100px 100px;
+    font-style: italic;
+}
+
+.third-section p:first-child {
+    font-size: 24px;
+    max-width: 800px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+.third-section p:last-child {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Fourth Section (Links) */
+.fourth-section {
+    background-color: white;
+    padding: 100px 100px;
+    text-align: center;
+}
+
+.contacts {
+    background-color: #3882f6;
+    border-radius: 15px;
+    box-shadow: 6px 6px 0px #1f2937;
+    width: 800px;
+    margin: auto;
+    padding: 50px;
+}
+
+.contacts h2 {
+    margin-bottom: 50px;
+    color: #e5e7eb;
+    font-size: 28px;
+}
+
+.contacts ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contacts li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 0px #1f2937;
+}
+
+.contacts img {
+    width: 24px;
+    height: 24px;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: white;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 14px;
 }
